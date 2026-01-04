@@ -79,13 +79,21 @@ export default function LoginPage() {
       <hr />
       <hr />
       <hr />
-      <button
-        onClick={onLogin}
-        className="p-2 border border-gray-400 rounded-md focus:outline-none focus:border-gray-100 cursor-pointer"
-      >
-        Login
-      </button>
-      <Link href="/signup">Visit Sign Up Page</Link>
+      <span>
+        <Link href="/resetPasswordToken">Reset Password?</Link>
+      </span>
+
+      <div>
+        <button className="p-2 border border-gray-400 rounded-md focus:outline-none focus:border-gray-100 cursor-pointer">
+          <Link href="/signup">Sign Up</Link>
+        </button>
+        <button
+          onClick={onLogin}
+          className="p-2 border border-gray-400 rounded-md focus:outline-none focus:border-gray-100 cursor-pointer"
+        >
+          Login
+        </button>
+      </div>
     </div>
   );
 }
